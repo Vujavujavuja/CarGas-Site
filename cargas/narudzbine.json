@@ -1,0 +1,105 @@
+[
+  {
+    "idN": 1,
+    "goriva": [
+      {
+        "naziv": "Benzin 95",
+        "cena": 172,
+        "kolicina": 2
+      },
+      {
+        "naziv": "Dizel",
+        "cena": 213.02,
+        "kolicina": 23
+      }
+    ],
+    "usluge": [
+      {
+        "naziv": "Prikolica",
+        "cena": 1200
+      }
+    ],
+    "proizvodi": [
+      {
+        "naziv": "Medenjak",
+        "cena": 350,
+        "kolicina": 2
+      }
+    ],
+    "totalPrice": 7143.46
+  },
+  {
+    "idN": 2,
+    "goriva": [
+      {
+        "naziv": "Benzin 98",
+        "cena": 178,
+        "kolicina": 2
+      }
+    ],
+    "usluge": [
+      {
+        "naziv": "Prikolica",
+        "cena": 1200
+      }
+    ],
+    "proizvodi": [
+      {
+        "naziv": "Medenjak",
+        "cena": 350,
+        "kolicina": 2
+      }
+    ],
+    "totalPrice": 2256
+  },
+  {
+    "idN": 3,
+    "goriva": [
+      {
+        "naziv": "Dizel",
+        "cena": 213.02,
+        "kolicina": 23
+      }
+    ],
+    "usluge": [
+      {
+        "naziv": "Prikolica",
+        "cena": 1200
+      }
+    ],
+    "proizvodi": [
+      {
+        "naziv": "Medenjak",
+        "cena": 350,
+        "kolicina": 22
+      }
+    ],
+    "totalPrice": 13799.46
+  },
+  {
+    "idN": 5,
+    "goriva": [
+      {
+        "naziv": "Adi dizel",
+        "cena": 221.2,
+        "kolicina": 2
+      }
+    ],
+    "usluge": [],
+    "proizvodi": [],
+    "totalPrice": 442.4
+  },
+  {
+    "idN": 2,
+    "goriva": [
+      {
+        "naziv": "Dizel",
+        "cena": 213.02,
+        "kolicina": 2
+      }
+    ],
+    "usluge": [],
+    "proizvodi": [],
+    "totalPrice": 426.04
+  }
+]

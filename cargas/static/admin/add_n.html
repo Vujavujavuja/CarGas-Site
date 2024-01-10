@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head><base href="http://localhost:8000/admin/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>CarGas</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <nav class="navbar">
+    <ul class="navlist1">
+      <li class="logoitem">
+        <a href="index.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+      </li>
+      <li class="u-nav-item-a">
+        <a class="btnclose" href="/admin/more.html">
+          Zatvori
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="dodaj-form">
+  <form id="addForm" class="add-form" action="/addnarudzbina" method="post">
+    <div class="form-row">
+      <label for="idN">ID:</label>
+    </div>
+    <div class="form-row">
+      <input id="idN" class="input-a" type="number" name="idN" placeholder="ID" required step="00">
+    </div>
+    <div class="form-row">
+      <label for="goriva">Goriva:</label>
+    </div>
+    <div class="form-row">
+      <select id="goriva" class="input-a"  name="goriva"  required></select>
+      <input id="kolicina-goriva" class="input-kol" type="number" name="cena" placeholder="Litara" required step="any">
+      <button id="addGorivo" class="btnadd" type="button">+</button>
+    </div>
+    <div class="form-row">
+      <label for="usluge">Usluge:</label>
+    </div>
+    <div class="form-row">
+      <select id="usluge" class="input-a" name="usluge"  required ></select>
+      <button id="addUsluga" class="btnadd" type="button">+</button>
+    </div>
+    <div class="form-row">
+      <label for="proizvodi">Proizvodi:</label>
+    </div>
+    <div class="form-row">
+      <select id="proizvodi" class="input-a"  name="proizvodi"  required ></select>
+      <input id="kolicina-proizvoda" class="input-kol" type="number" name="cena" placeholder="Kolicina" required step="any">
+      <button id="addProizvod" class="btnadd" type="button">+</button>
+    </div>
+    <div class="form-row">
+      <label>Ukupna cena:</label>
+      <span id="totalPrice"></span>
+      <label>RSD</label>
+    </div>
+    <div class="form-row">
+      <label></label>
+    </div>
+    <div class="form-row">
+      <button class="btnsave" type="submit">
+        Sačuvaj
+      </button>
+    </div>
+  </form>
+</div>
+<section class="u-section-5">
+  <label>Spisak narudzbine:</label>
+  <div id="selectedGoriva" class="selected-items"></div>
+  <div id="selectedProizvodi" class="selected-items"></div>
+  <div id="selectedUsluge" class="selected-items"></div>
+</section>
+<script src="js/narudzbine.js"></script>
+</body>
+</html>

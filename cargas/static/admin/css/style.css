@@ -1,0 +1,527 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Header CSS */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: black 2px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+    padding-right: 4%;
+
+}
+
+.navbar .navlist1 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-left: auto; /* Pushes the navigation items to the right */
+    width: 100%;
+}
+
+.navbar .navlist1 .logoitem {
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+.navlist1 .u-nav-item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+.navlist1 .u-nav-item a:hover {
+    color: limegreen;
+}
+
+.navlist1 .u-nav-item .active-navitem {
+    color: darkorange;
+}
+
+.logo {
+    max-height: 75px;
+    display: block;
+}
+/*Section 1 CSS*/
+.u-section-1 {
+    background-image: url('../carfas1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 120px;
+}
+.u-section-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.u-section-1 .u-sheet-1, .u-text-1, .u-text-2, .u-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.u-section-1  .u-sheet-1 {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.u-section-1 .u-text-1 {
+    font-size: 6em;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: white 2px solid;
+}
+
+.u-section-1 .u-text-2 {
+    font-size: 2em;
+    text-align: justify-all;
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+}
+
+.u-section-1 .u-btn {
+    background-color: darkorange;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-block;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+}
+
+.u-section-1 .u-btn:hover {
+    background-color: black;
+    color: darkorange;
+}
+/* Section 2 CSS*/
+.u-section-2{
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+}
+.u-section-2 .layout1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-bottom: 2%;
+}
+.u-section-2 .layout1p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.u-section-2 .textlayout, .u-section-2 .embed-responsive {
+    height: 75%;
+    width: 30%;
+}
+.u-section-2 .u-text-1{
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid black;
+    width: 50%;
+    display: inline-block;
+}
+.u-section-2 .u-text-10{
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    width: 50%;
+    display: inline-block;
+    border-bottom: darkolivegreen 2px solid;
+}
+.u-section-2 .u-text-2{
+    font-size: 1.5em;
+    text-align: justify-all;
+}
+.u-section-2 .paragraph {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 1.75em;
+    text-align: justify;
+    border: 2px solid darkorange;
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: black;
+}
+
+.u-section-2 .embed-responsive iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .layout1 {
+        flex-direction: column;
+    }
+
+    .paragraph, .embed-responsive {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .embed-responsive iframe {
+        height: 250px; /* Adjust height as needed for smaller screens */
+    }
+}
+/* Section 3 CSS */
+.u-section-3 {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+}
+.u-section-3 .contact-form {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form */
+    padding: 15px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .form-row input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkorange;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 0.5em;
+}
+
+.contact-form button:hover {
+    background-color: black;
+    color: darkorange;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact-form select {
+    width: 100%; /* Adjust for padding and border */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between each field */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+.contact-form input[type="radio"] {
+    margin: 0 10px 0 0;
+    margin-bottom: 10px;
+}
+/* Section 4 CSS */
+.u-section-4 {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.u-section-4 .u-text-1{
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid black;
+    width: 50%;
+    display: inline-block;
+}
+/* General styling for the table */
+.table1 {
+    width: 90%; /* Span nearly the whole page */
+    margin: 0 auto; /* Center the table */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border-collapse: collapse; /* Collapse borders */
+    padding-bottom: 2%;
+}
+
+/* Styling for table headers and cells */
+.table1 th,
+.table1 td {
+    padding: 10px; /* Add some padding for content */
+    border: 1px solid #ddd; /* Light border for cells */
+    text-align: center; /* Center text in cells */
+}
+
+/* Styling for table header */
+.table1 thead {
+    background-color: #444; /* Slightly darker background for header */
+}
+
+/* Add hover effect for rows */
+.table1 tbody tr:hover {
+    background-color: #555; /* Darken row on hover */
+    padding-bottom: 2%;
+}
+.dodajbtndiv {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.dodajbtndiv .u-btn{
+    background-color: darkorange;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+}
+.dodajbtndiv .u-btn2{
+    background-color: darkolivegreen;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+}
+.dodajbtndiv .u-btn:hover {
+    background-color: black;
+    color: darkorange;
+}
+.dodajbtndiv .u-btn2:hover {
+    background-color: black;
+    color: darkolivegreen;
+}
+/* add CSS */
+.dodaj-form .btnsave{
+    background-color: darkolivegreen;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.dodaj-form .btnsave:hover {
+    background-color: black;
+    color: darkolivegreen;
+}
+.u-nav-item-a .btnclose{
+    background-color: darkorange;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+}
+.u-nav-item-a .btnclose:hover {
+    background-color: black;
+    color: darkorange;
+}
+.dodaj-form{
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    padding: 2%;
+    background-color: #555555;
+}
+.dodaj-form .form-row {
+    padding: 1%;
+}
+.dodaj-form .form-row label{
+    color: white;
+    font-size: 1.5em;
+    padding: 1%;
+}
+.dodaj-form .form-row input {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* edit CSS */
+.izmeni-div{
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    padding: 2%;
+    background-color: #555555;
+}
+.btn-change {
+    background-color: darkolivegreen;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn-delete {
+    background-color: indianred;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn-change:hover {
+    background-color: black;
+    color: darkolivegreen;
+}
+.btn-delete:hover {
+    background-color: black;
+    color: indianred;
+}
+.form-row select{
+    width: 12%; /* Adjust for padding and border */
+    height: 3%;
+    padding: 10px;
+    margin-bottom: 10px; /* Space between each field */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+.form-row .btnadd {
+    background-color: darkorange;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.form-row .btnadd:hover {
+    background-color: black;
+    color: darkorange;
+}
+.form-row span{
+    color: white;
+    font-size: 1.5em;
+    padding: 1%;
+}
+.form-row .input-kol{
+    width: 4%;
+    height: 4%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.u-section-5 {
+    background-color: #555555;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.u-section-5 label{
+    color: white;
+    font-size: 1.5em;
+    padding: 1%;
+}
+.u-section-5 div {
+    color: white;
+    font-size: 1em;
+
+}
+/* Footer CSS */
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+footer .footer-text{
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+footer img {
+    width: 50px;
+    height: auto;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+footer p, footer img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}

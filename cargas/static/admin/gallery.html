@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+ <head><base href="http://localhost:8000/admin/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>CarGas</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <nav class="navbar">
+    <ul class="navlist1">
+      <li class="logoitem">
+        <a href="index.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+      </li>
+      <li class="u-nav-item">
+        <a class="navitem" href="/admin/index.html">Naslovna</a>
+      </li>
+      <li class="u-nav-item">
+        <a class="navitem" href="/admin/about.html">O nama</a>
+      </li>
+      <li class="u-nav-item">
+        <a class="navitem" href="/admin/contact.html">Kontakt</a>
+      </li>
+      <li class="u-nav-item">
+        <a class="active-navitem" href="/admin/gallery.html">Narudzbine</a>
+      </li>
+      <li class="u-nav-item">
+        <a class="navitem" href="/admin/more.html">Usluge</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="u-section-4">
+  <h1 class="u-text-1">Narudzbine:</h1>
+  <table class="table1">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Goriva</th>
+      <th scope="col">Usluge</th>
+      <th scope="col">Proizvodi</th>
+      <th scope="col">Ukupna cena (RSD)</th>
+    </tr>
+    </thead>
+    <tbody id="narudzbineList">
+    </tbody>
+  </table>
+  <div class="dodajbtndiv">
+    <a href="/admin/add_n.htmln.html" class="u-btn">Dodaj narudzbinu +</a>
+    <a href="/admin/izmeni_n.htmln.html" class="u-btn2">Izmeni narudzbinu</a>
+  </div>
+</section>
+<footer class="footer">
+  <div>
+    <p class="footer-text">© 2023 CarGas doo.</p>
+    <div class="socila-icons">
+      <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook" class="social-icon"></a>
+      <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" class="social-icon"></a>
+      <a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter" class="social-icon"></a>
+    </div>
+  </div>
+</footer>
+<script src="js/tabele.js"></script>
+</body>
+</html>

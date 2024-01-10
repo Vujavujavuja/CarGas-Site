@@ -1,0 +1,27 @@
+[
+  {
+    "naziv": "Benzin 95",
+    "oznaka": "BMB 95",
+    "cena": 172
+  },
+  {
+    "naziv": "Benzin 98",
+    "oznaka": "BMB 98",
+    "cena": 178
+  },
+  {
+    "naziv": "Dizel",
+    "oznaka": "EUD",
+    "cena": 213.02
+  },
+  {
+    "naziv": "Adi dizel",
+    "oznaka": "ADI",
+    "cena": 221.2
+  },
+  {
+    "naziv": "Plin",
+    "oznaka": "TNG",
+    "cena": 87.22
+  }
+]

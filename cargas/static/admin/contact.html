@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+ <head><base href="http://localhost:8000/admin/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CarGas</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <ul class="navlist1">
+            <li class="logoitem">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+            </li>
+            <li class="u-nav-item">
+                <a class="navitem" href="/admin/index.html">Naslovna</a>
+            </li>
+            <li class="u-nav-item">
+                <a class="navitem" href="/admin/about.html">O nama</a>
+            </li>
+            <li class="u-nav-item">
+                <a class="active-navitem" href="/admin/contact.html">Kontakt</a>
+            </li>
+            <li class="u-nav-item">
+                <a class="navitem" href="/admin/gallery.html">Narudzbine</a>
+            </li>
+            <li class="u-nav-item">
+                <a class="navitem" href="/admin/more.html">Usluge</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="u-section-3">
+    <div class="u-sheet-3">
+        <h1 class="u-text-1">Kontaktirajte nas:</h1>
+        <div class="u-form u-form-1">
+            <form id="contactForm" class="contact-form" action="/contact" method="post">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Ime" required>
+                    <input type="text" name="surname" placeholder="Prezime" required>
+                </div>
+                <input type="email" name="email" placeholder="Email" required>
+                <label>Razlog kontakta:</label>
+                <select name="contactReason" required>
+                    <option value=""></option>
+                    <option value="support">Podrška</option>
+                    <option value="suggestions">Sugestije</option>
+                    <option value="inquiry">Upit</option>
+                </select>
+                <textarea name="message" placeholder="Poruka" required></textarea>
+                <button type="submit">Pošalji</button>
+            </form>
+            <div id="formMessage" style="display:none;"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div>
+        <p class="footer-text">© 2023 CarGas doo.</p>
+        <div class="socila-icons">
+            <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook" class="social-icon"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" class="social-icon"></a>
+            <a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter" class="social-icon"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head><base href="http://localhost:8000/admin/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CarGas</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <ul class="navlist1">
+            <li class="logoitem">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+            </li>
+            <li class="u-nav-item-a">
+                <a class="btnclose" href="/admin/more.html">
+                    Zatvori
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="dodaj-form">
+    <form id="addForm" class="add-form" action="/addproizvod" method="post">
+        <div class="form-row">
+            <label for="naziv">Naziv proizvoda:</label>
+        </div>
+        <div class="form-row">
+            <input id="naziv" class="input-a" type="text" name="naziv" placeholder="Naziv" required>
+        </div>
+        <div class="form-row">
+            <label for="tip">Tip proizvoda:</label>
+        </div>
+        <div class="form-row">
+            <input id="tip" class="input-a" type="text" name="tip" placeholder="Tip" required>
+        </div>
+        <div class="form-row">
+            <label for="opis">Opis proizvoda:</label>
+        </div>
+        <div class="form-row">
+            <input id="opis" class="input-a" type="text" name="opis" placeholder="Opis" required>
+        </div>
+        <div class="form-row">
+            <label for="cena">Cena proizvoda:</label>
+        </div>
+        <div class="form-row">
+            <input id="cena" class="input-a" type="number" name="cena" placeholder="Cena (RSD)" required step="any">
+        </div>
+        <div class="form-row">
+            <button class="btnsave" type="submit">
+                Sačuvaj
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
